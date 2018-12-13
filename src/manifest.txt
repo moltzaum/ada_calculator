@@ -1,0 +1,14 @@
+main files:
+calculator.adb
+generic_number.adb
+generic_number.ads
+unbound_stack.adb
+unbound_stack.ads
+
+string_reverse.adb
+	example for the unbound stack
+number_driver.adb
+	small demo for the generic_number
+test_slices.adb
+	test to understand string slicing
+

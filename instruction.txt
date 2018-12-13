@@ -1,0 +1,27 @@
+Calculator Program
+There are two stacks: and operator stack and an operand stack.
+
+operator stack (for -+*/)
+operand stack  (for numbers)
+ 
+The program reads a string and goes through it left to right (in a single pass).
+When an operand is encountered, it is pushed onto the operand stack.
+When an operator is encountered, all of the pending operators whose precedence is higher or equal to the current operator are applied and then the current operator is pushed onto the operator stack.
+
+The single value remaining on the operand stack is the value of the expression. If there is not a single value the expression is not valid. 
+
+Applying an operator:
+  pop operator
+  pop two operands (if can't, the expression is not valid)
+  perform operation
+  push result onto operand stack
+
+support floating point numbers and parenthesized sub-expressions.
+raise an error for illegal characters [^\d*/+-], except ignore whitespace
+need a writeup
+
+Use your program to compute the value of ten expressions, including two invalid ones.
+case C: eval int (no parenthesis)
+case B: eval flt (no parenthesis)
+case A: eval flt (w/ parenthesis)
+
